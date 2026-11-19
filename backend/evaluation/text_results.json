@@ -1,0 +1,1084 @@
+{
+ "generated_at": "2026-11-19T12:09:02.093179+00:00",
+ "modality": "text",
+ "stage": "heldout",
+ "dataset": "textsightai/ai-text-detection-benchmark-2026",
+ "rule": {
+  "likely_ai": 0.7,
+  "no_indication": 0.3
+ },
+ "results": {
+  "fakespot-ai/roberta-base-ai-text-detection-v1": {
+   "revision": "f9cdb14d1f8b105f597d80fa7b56f20c6ea0e9db",
+   "n": 206,
+   "errors": 0,
+   "roc_auc": 0.9633,
+   "mean_fake": 0.959,
+   "mean_real": 0.377,
+   "rule_likely_ai": {
+    "n": 206,
+    "tp": 54,
+    "tn": 114,
+    "fp": 36,
+    "fn": 2,
+    "accuracy": 0.8155,
+    "precision": 0.6,
+    "recall": 0.9643,
+    "f1": 0.7397,
+    "fpr": 0.24,
+    "fnr": 0.0357,
+    "recall_ci95": [
+     0.879,
+     0.99
+    ],
+    "fpr_ci95": [
+     0.179,
+     0.314
+    ]
+   },
+   "coverage": 0.801,
+   "no_indication_npv": {
+    "k": 75,
+    "n": 75,
+    "value": 1.0,
+    "ci95": [
+     0.951,
+     1.0
+    ]
+   },
+   "seconds": 250.8,
+   "rows": [
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.7864
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.6151
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9992
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.6787
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9997
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.964
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9995
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.8639
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.873
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.7314
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.8763
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.8697
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9988
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9997
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9976
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9989
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9997
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9987
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9581
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9993
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9993
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9997
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9994
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.998
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9997
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9997
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9983
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9966
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9258
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9147
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.7211
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9599
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.99
+    },
+    {
+     "id": "ai_generated_2026",
+     "label": "fake",
+     "score": 0.998
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0012
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.8908
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.2238
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.7072
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.6486
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.6291
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.5574
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.1131
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.5893
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.8145
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.5132
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.5491
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.8045
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0201
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.1782
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0561
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.9478
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.1304
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.9961
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0013
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.1923
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.1703
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.3142
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.034
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0433
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.3307
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.2912
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0676
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.3503
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0091
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.002
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0023
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.0085
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.585
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.2113
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.7161
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.057
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.9194
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.8548
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.5174
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.4746
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.4209
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0058
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0778
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.6194
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.2551
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.9977
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.1668
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.3659
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.0953
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0236
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0048
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.8686
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.1494
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0151
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0059
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.9935
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.077
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.5853
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.8554
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.5019
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0238
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.4953
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.8095
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.6645
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.8941
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0359
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.6613
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.6286
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0064
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0023
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.0012
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0008
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.0722
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0139
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0049
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.9213
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.9472
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.9779
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.6889
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0028
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0371
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.036
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.1149
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.4922
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.7268
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.4954
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.9305
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.028
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.3181
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.0535
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0109
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.8475
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0117
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.0052
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.5399
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.4521
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.4625
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.1779
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.9283
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.7302
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.9985
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.9158
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0041
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.21
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.7118
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.2875
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0611
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.0047
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.8059
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.5334
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.2558
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.7515
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.9795
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.3178
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0039
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.895
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.5521
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.577
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.9745
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0202
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.7583
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.0352
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0351
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.3304
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0055
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.7718
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.4932
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.4653
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0022
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.1707
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.8659
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0097
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.0391
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.5043
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.8979
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.2626
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.1349
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.6535
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0304
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.0754
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.4923
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.9095
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.5253
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0257
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0116
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.2944
+    },
+    {
+     "id": "human_literature_publicdomain",
+     "label": "real",
+     "score": 0.0052
+    },
+    {
+     "id": "human_pmc_ccby_nonanglophone",
+     "label": "real",
+     "score": 0.0108
+    },
+    {
+     "id": "human_wikipedia_pre2022",
+     "label": "real",
+     "score": 0.0092
+    }
+   ]
+  }
+ }
+}

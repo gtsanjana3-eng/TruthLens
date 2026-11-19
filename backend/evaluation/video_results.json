@@ -1,0 +1,2544 @@
+{
+ "meta": {
+  "generated_at": "2026-11-19T10:21:26.207131+00:00",
+  "dataset": "angads24/deepfake-video",
+  "dataset_revision": "3470af66b50e6d715f108bdfa67342907137e1f4",
+  "selection_seed": 2026,
+  "videos": 80,
+  "split": "heldout",
+  "agent_version": "2.1.0",
+  "models": {
+   "face_a": [
+    "hchcsuim/batch-size16_DFDC_opencv-1FPS_faces-expand50-aligned_unaugmentation",
+    "5c9aa417b1e9118441877de06536b37b25019889"
+   ],
+   "face_b": [
+    "prithivMLmods/Deep-Fake-Detector-v2-Model",
+    "3a99ae26f52c7ac7c3a53103b6cf3a8b617f7093"
+   ],
+   "frame": [
+    "Organika/sdxl-detector",
+    "b37fede8562cb72b89ec201c0987f96ba21b518a"
+   ]
+  },
+  "frames_per_video": 24,
+  "thresholds": {
+   "likely_ai": 0.7,
+   "no_indication": 0.3
+  },
+  "wall_time_s": 1.1,
+  "mean_seconds_per_video": 19.85
+ },
+ "detectors": {
+  "face_a": {
+   "model": "hchcsuim/batch-size16_DFDC_opencv-1FPS_faces-expand50-aligned_unaugmentation",
+   "applicable_videos": 80,
+   "roc_auc": 0.8531,
+   "mean_score_fake": 0.5495,
+   "mean_score_real": 0.1542,
+   "rule_verdict_likely_ai": {
+    "n": 80,
+    "tp": 15,
+    "tn": 40,
+    "fp": 0,
+    "fn": 25,
+    "accuracy": 0.6875,
+    "precision": 1.0,
+    "recall": 0.375,
+    "f1": 0.5455,
+    "fpr": 0.0,
+    "fnr": 0.625,
+    "recall_ci95": [
+     0.242,
+     0.53
+    ],
+    "fpr_ci95": [
+     0.0,
+     0.088
+    ]
+   },
+   "rule_mean_ge_0_5": {
+    "n": 80,
+    "tp": 24,
+    "tn": 39,
+    "fp": 1,
+    "fn": 16,
+    "accuracy": 0.7875,
+    "precision": 0.96,
+    "recall": 0.6,
+    "f1": 0.7385,
+    "fpr": 0.025,
+    "fnr": 0.4,
+    "recall_ci95": [
+     0.446,
+     0.737
+    ],
+    "fpr_ci95": [
+     0.004,
+     0.129
+    ]
+   }
+  },
+  "face_b": {
+   "model": "prithivMLmods/Deep-Fake-Detector-v2-Model",
+   "applicable_videos": 80,
+   "roc_auc": 0.4981,
+   "mean_score_fake": 0.6421,
+   "mean_score_real": 0.6428,
+   "rule_verdict_likely_ai": {
+    "n": 80,
+    "tp": 17,
+    "tn": 21,
+    "fp": 19,
+    "fn": 23,
+    "accuracy": 0.475,
+    "precision": 0.4722,
+    "recall": 0.425,
+    "f1": 0.4474,
+    "fpr": 0.475,
+    "fnr": 0.575,
+    "recall_ci95": [
+     0.285,
+     0.578
+    ],
+    "fpr_ci95": [
+     0.329,
+     0.625
+    ]
+   },
+   "rule_mean_ge_0_5": {
+    "n": 80,
+    "tp": 31,
+    "tn": 7,
+    "fp": 33,
+    "fn": 9,
+    "accuracy": 0.475,
+    "precision": 0.4844,
+    "recall": 0.775,
+    "f1": 0.5962,
+    "fpr": 0.825,
+    "fnr": 0.225,
+    "recall_ci95": [
+     0.625,
+     0.877
+    ],
+    "fpr_ci95": [
+     0.68,
+     0.913
+    ]
+   }
+  },
+  "frame": {
+   "model": "Organika/sdxl-detector",
+   "applicable_videos": 80,
+   "roc_auc": 0.525,
+   "mean_score_fake": 0.5924,
+   "mean_score_real": 0.5194,
+   "rule_verdict_likely_ai": {
+    "n": 80,
+    "tp": 21,
+    "tn": 27,
+    "fp": 13,
+    "fn": 19,
+    "accuracy": 0.6,
+    "precision": 0.6176,
+    "recall": 0.525,
+    "f1": 0.5676,
+    "fpr": 0.325,
+    "fnr": 0.475,
+    "recall_ci95": [
+     0.375,
+     0.671
+    ],
+    "fpr_ci95": [
+     0.201,
+     0.48
+    ]
+   },
+   "rule_mean_ge_0_5": {
+    "n": 80,
+    "tp": 25,
+    "tn": 18,
+    "fp": 22,
+    "fn": 15,
+    "accuracy": 0.5375,
+    "precision": 0.5319,
+    "recall": 0.625,
+    "f1": 0.5747,
+    "fpr": 0.55,
+    "fnr": 0.375,
+    "recall_ci95": [
+     0.47,
+     0.758
+    ],
+    "fpr_ci95": [
+     0.398,
+     0.693
+    ]
+   }
+  }
+ },
+ "combined": {
+  "verdict_counts": {
+   "real": {
+    "likely_ai": 0,
+    "no_indication": 0,
+    "inconclusive": 16,
+    "models_disagree": 24,
+    "not_applicable": 0
+   },
+   "fake": {
+    "likely_ai": 3,
+    "no_indication": 0,
+    "inconclusive": 6,
+    "models_disagree": 31,
+    "not_applicable": 0
+   }
+  },
+  "coverage": 0.0375,
+  "on_decided_only": {
+   "n": 3,
+   "tp": 3,
+   "tn": 0,
+   "fp": 0,
+   "fn": 0,
+   "accuracy": 1.0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "fpr": null,
+   "fnr": 0.0,
+   "recall_ci95": [
+    0.438,
+    1.0
+   ],
+   "fpr_ci95": null
+  },
+  "abstentions_as_not_flagged": {
+   "n": 80,
+   "tp": 3,
+   "tn": 40,
+   "fp": 0,
+   "fn": 37,
+   "accuracy": 0.5375,
+   "precision": 1.0,
+   "recall": 0.075,
+   "f1": 0.1395,
+   "fpr": 0.0,
+   "fnr": 0.925,
+   "recall_ci95": [
+    0.026,
+    0.199
+   ],
+   "fpr_ci95": [
+    0.0,
+    0.088
+   ]
+  }
+ },
+ "decision_grade_auc": 0.75,
+ "decision_grade": {
+  "face_a": true,
+  "face_b": false,
+  "frame": false
+ },
+ "policy_v2_1_counts": {
+  "real": {
+   "inconclusive": 12,
+   "no_indication": 28
+  },
+  "fake": {
+   "likely_ai": 15,
+   "inconclusive": 16,
+   "no_indication": 9
+  }
+ },
+ "app_headline": {
+  "coverage": 0.65,
+  "on_decided_only": {
+   "n": 52,
+   "tp": 15,
+   "tn": 28,
+   "fp": 0,
+   "fn": 9,
+   "accuracy": 0.8269,
+   "precision": 1.0,
+   "recall": 0.625,
+   "f1": 0.7692,
+   "fpr": 0.0,
+   "fnr": 0.375,
+   "recall_ci95": [
+    0.427,
+    0.788
+   ],
+   "fpr_ci95": [
+    0.0,
+    0.121
+   ]
+  },
+  "abstentions_as_not_flagged": {
+   "n": 80,
+   "tp": 15,
+   "tn": 40,
+   "fp": 0,
+   "fn": 25,
+   "accuracy": 0.6875,
+   "precision": 1.0,
+   "recall": 0.375,
+   "f1": 0.5455,
+   "fpr": 0.0,
+   "fnr": 0.625,
+   "recall_ci95": [
+    0.242,
+    0.53
+   ],
+   "fpr_ci95": [
+    0.0,
+    0.088
+   ]
+  },
+  "no_indication_given_to_fakes": 9
+ },
+ "per_video": [
+  {
+   "file": "dataset/real/02__walking_down_street_outside_angry.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 21,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1947,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.5699,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9842,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 26.69,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/real/06__walking_and_outside_surprised.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0678,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7919,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9586,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 24.9,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/11__exit_phone_room.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1787,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.5971,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.077,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 22.64,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/11__outside_talking_pan_laughing.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 22,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0106,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6509,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.964,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 21.39,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/13__walk_down_hall_angry.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 21,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1074,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7212,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.6045,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 18.14,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/02__talking_angry_couch.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1557,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.5627,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0212,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 20.25,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/04__walk_down_hall_angry.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 18,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.2542,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.4352,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.5726,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 16.82,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/12__walking_down_street_outside_angry.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 23,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.179,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.8127,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9965,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 19.24,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/13__outside_talking_pan_laughing.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 22,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0014,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7108,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9945,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 19.42,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/12__kitchen_pan.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 23,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1107,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.8134,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0673,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 19.0,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/08__walking_outside_cafe_disgusted.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 23,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0286,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.2181,
+     "verdict": "no_indication"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.4101,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 18.09,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/12__podium_speech_happy.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0169,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.8176,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.4738,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 19.15,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/12__exit_phone_room.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1252,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.8067,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0393,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 18.76,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/10__walk_down_hall_angry.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 22,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.2893,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6641,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.6786,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 18.35,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/real/12__walk_down_hall_angry.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 22,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1952,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.8056,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.6756,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 20.23,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/real/01__exit_phone_room.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.3339,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6902,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.6012,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 20.54,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/real/13__kitchen_pan.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 22,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0009,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7005,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.104,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 19.73,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/06__kitchen_pan.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 22,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0388,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6614,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0958,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 18.75,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/02__talking_against_wall.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.005,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.3983,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9993,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 19.2,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/09__walk_down_hall_angry.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 20,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1474,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.8121,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.5395,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 16.85,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/01__kitchen_pan.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 23,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0408,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.434,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0769,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 18.28,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/15__hugging_happy.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1086,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.5235,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.1717,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 19.41,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/08__outside_talking_pan_laughing.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 22,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0011,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7498,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9998,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 18.6,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/05__outside_talking_pan_laughing.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 23,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1308,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7139,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9985,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 18.94,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/07__podium_speech_happy.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.3662,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.5147,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.5446,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 19.9,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/real/15__walking_down_indoor_hall_disgust.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.266,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6454,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.8193,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 20.45,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/real/07__kitchen_pan.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 23,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0658,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.3061,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.1353,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 18.74,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/15__outside_talking_still_laughing.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0478,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.544,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9997,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 19.12,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/06__kitchen_still.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.2976,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6555,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0279,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 19.44,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/14__talking_against_wall.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0132,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7436,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9999,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 19.1,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/03__meeting_serious.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.6415,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.4468,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.6071,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 19.1,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/real/12__secret_conversation.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.4442,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7518,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0006,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 19.55,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/real/06__talking_angry_couch.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.2589,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6076,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.3419,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 20.48,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/real/10__kitchen_pan.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 22,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.4737,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7339,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.087,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 18.58,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/real/09__exit_phone_room.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.2152,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7974,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.3402,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 18.3,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/real/08__outside_talking_still_laughing.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0056,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7286,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 1.0,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 19.35,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/12__hugging_happy.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1818,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7675,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0359,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 19.62,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/real/02__walking_down_indoor_hall_disgust.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0061,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.4365,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.6061,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 19.35,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/12__talking_against_wall.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0045,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.8424,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9998,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 18.9,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/real/11__kitchen_pan.mp4",
+   "label": "real",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1581,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.5267,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.1278,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 19.67,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/fake/04_06__kitchen_still__ZK95PQDE.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.8373,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7905,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0905,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 19.32,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/06_14__walking_down_indoor_hall_disgust__8U9ULZDT.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.3394,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6241,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.7745,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 22.26,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/03_07__walking_outside_cafe_disgusted__IFSURI9X.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.2306,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.5249,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0201,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 18.83,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/04_13__walking_down_street_outside_angry__00T3UYOR.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "likely_ai",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.8634,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7131,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.8696,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 18.33,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/06_25__talking_angry_couch__MI9BDQ7M.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.6311,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7712,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.3037,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 19.79,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/06_03__talking_against_wall__4I8LRXWF.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0694,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.744,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9996,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 18.97,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/fake/01_11__secret_conversation__4OJNJLOO.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.7073,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.3942,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0003,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 18.76,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/06_26__kitchen_still__L5BVR5L9.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.5104,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6967,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0308,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 19.34,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/03_04__outside_talking_pan_laughing__T04P6ELC.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.9645,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.4561,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9363,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 18.96,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/02_13__podium_speech_happy__2YSYT2N3.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.5551,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7347,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 18.96,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/06_14__walking_and_outside_surprised__8U9ULZDT.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0573,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.8245,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9852,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 21.28,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/fake/02_07__walking_and_outside_surprised__1VMZUH1W.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.2255,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.677,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9674,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 21.27,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/fake/04_18__kitchen_still__NAXINA1N.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 1.0,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6773,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.1084,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 24.68,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/06_02__podium_speech_happy__N8OSN8P6.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.6995,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7276,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.8819,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 23.1,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/06_04__outside_talking_still_laughing__ZK95PQDE.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0559,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6729,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9987,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 23.64,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/fake/03_04__talking_angry_couch__T04P6ELC.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1918,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6256,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0173,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 22.96,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/fake/07_21__talking_against_wall__MKU99DVX.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "likely_ai",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.8943,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.8042,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9971,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 20.67,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/09_03__talking_against_wall__8DTEGQ54.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.5443,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.5926,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9998,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 19.7,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/03_07__walking_down_indoor_hall_disgust__PWXXULHR.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0406,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.5303,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.6711,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 19.9,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/fake/06_25__outside_talking_pan_laughing__MI9BDQ7M.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.6176,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7579,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9946,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 18.91,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/04_07__exit_phone_room__ITC0C48B.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.2675,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.4971,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9881,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 18.28,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/03_14__walk_down_hall_angry__P1L5PF4I.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.7338,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6816,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0592,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 18.95,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/06_18__podium_speech_happy__DEA1TCLN.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.4365,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7332,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.8787,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 19.49,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/07_14__exit_phone_room__P9QFO50U.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.7701,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.5832,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.5231,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 19.2,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/06_11__walking_outside_cafe_disgusted__MX659QU8.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.6691,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.5628,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9745,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 18.67,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/04_21__walking_down_street_outside_angry__5Y31RZP8.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.4785,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.292,
+     "verdict": "no_indication"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.8879,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 18.96,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/02_21__kitchen_pan__Z0XHPQAR.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.7998,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6826,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.3478,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 19.55,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/03_13__outside_talking_still_laughing__GBYWJW06.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.1504,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.8293,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9985,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 19.63,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/fake/01_03__hugging_happy__ISF9SP4G.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0473,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7644,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.1018,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 21.36,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/fake/07_03__hugging_happy__7NGMD8FT.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.341,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.4924,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.6357,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 20.58,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/05_17__walking_down_street_outside_angry__M3H96PDQ.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "likely_ai",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.93,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.877,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.8673,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 19.03,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/06_07__exit_phone_room__NMGYPBXE.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.8031,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.4532,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.149,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 18.62,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/03_26__kitchen_still__WBSXBL82.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.9958,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.8867,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0019,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 21.57,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/10_19__kitchen_still__IDX76N5R.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.8858,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.6959,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0127,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 22.92,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/06_04__walking_outside_cafe_disgusted__ZK95PQDE.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.0732,
+     "verdict": "no_indication"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.1539,
+     "verdict": "no_indication"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9633,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 20.47,
+   "verdict_policy_v2_1": "no_indication"
+  },
+  {
+   "file": "dataset/fake/06_07__walking_down_street_outside_angry__NMGYPBXE.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.9767,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.3785,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9886,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 18.72,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/04_26__outside_talking_still_laughing__WX836VLY.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.3003,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.718,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.9999,
+     "verdict": "likely_ai"
+    }
+   },
+   "seconds": 19.9,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/06_20__kitchen_pan__6SUW7063.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.9855,
+     "verdict": "likely_ai"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.8654,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0861,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 18.95,
+   "verdict_policy_v2_1": "likely_ai"
+  },
+  {
+   "file": "dataset/fake/07_03__talking_angry_couch__WPT3Z2KN.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "models_disagree",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.6489,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.7068,
+     "verdict": "likely_ai"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.0983,
+     "verdict": "no_indication"
+    }
+   },
+   "seconds": 21.08,
+   "verdict_policy_v2_1": "inconclusive"
+  },
+  {
+   "file": "dataset/fake/03_13__meeting_serious__T3MZOI8X.mp4",
+   "label": "fake",
+   "status": "completed",
+   "verdict": "inconclusive",
+   "faces": 24,
+   "frames": 24,
+   "rendered": false,
+   "detectors": {
+    "face_a": {
+     "status": "completed",
+     "mean": 0.6519,
+     "verdict": "inconclusive"
+    },
+    "face_b": {
+     "status": "completed",
+     "mean": 0.4912,
+     "verdict": "inconclusive"
+    },
+    "frame": {
+     "status": "completed",
+     "mean": 0.5872,
+     "verdict": "inconclusive"
+    }
+   },
+   "seconds": 19.24,
+   "verdict_policy_v2_1": "inconclusive"
+  }
+ ]
+}

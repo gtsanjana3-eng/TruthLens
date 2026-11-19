@@ -1,0 +1,1296 @@
+{
+ "generated_at": "2026-11-19T11:57:21.717942+00:00",
+ "modality": "text",
+ "stage": "screen",
+ "dataset": "textsightai/ai-text-detection-benchmark-2026",
+ "rule": {
+  "likely_ai": 0.7,
+  "no_indication": 0.3
+ },
+ "results": {
+  "fakespot-ai/roberta-base-ai-text-detection-v1": {
+   "revision": "f9cdb14d1f8b105f597d80fa7b56f20c6ea0e9db",
+   "n": 120,
+   "errors": 0,
+   "roc_auc": 0.9685,
+   "mean_fake": 0.9818,
+   "mean_real": 0.5057,
+   "rule_likely_ai": {
+    "n": 120,
+    "tp": 59,
+    "tn": 37,
+    "fp": 23,
+    "fn": 1,
+    "accuracy": 0.8,
+    "precision": 0.7195,
+    "recall": 0.9833,
+    "f1": 0.831,
+    "fpr": 0.3833,
+    "fnr": 0.0167,
+    "recall_ci95": [
+     0.911,
+     0.997
+    ],
+    "fpr_ci95": [
+     0.271,
+     0.51
+    ]
+   },
+   "coverage": 0.8917,
+   "no_indication_npv": {
+    "k": 24,
+    "n": 25,
+    "value": 0.96,
+    "ci95": [
+     0.805,
+     0.993
+    ]
+   },
+   "seconds": 104.9,
+   "rows": [
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.5716
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0028
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0952
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9803
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.993
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0239
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.8149
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0038
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.4959
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0422
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.5692
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9744
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9968
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.4269
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9958
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0612
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9949
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.8125
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0215
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0063
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9346
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0004
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.1701
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.1541
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0137
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9991
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9379
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.659
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0341
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.21
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9996
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9345
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0006
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.6597
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9466
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0014
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.1574
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.6919
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.8876
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.6916
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9392
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0288
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9268
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.441
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.1481
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.627
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9895
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.4489
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.986
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.5073
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.7921
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9873
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9701
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.001
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9838
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0715
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0076
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0027
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0119
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.5022
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9995
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9994
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9951
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9997
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9996
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9997
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.7572
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9961
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9255
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9987
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.2963
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9983
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9893
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9987
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9589
+    }
+   ]
+  },
+  "openai-community/roberta-base-openai-detector": {
+   "revision": "6cba99c003b711c7fe94f8a3aa2be35a792cb6fa",
+   "n": 120,
+   "errors": 0,
+   "roc_auc": 0.4451,
+   "mean_fake": 0.0598,
+   "mean_real": 0.1359,
+   "rule_likely_ai": {
+    "n": 120,
+    "tp": 2,
+    "tn": 56,
+    "fp": 4,
+    "fn": 58,
+    "accuracy": 0.4833,
+    "precision": 0.3333,
+    "recall": 0.0333,
+    "f1": 0.0606,
+    "fpr": 0.0667,
+    "fnr": 0.9667,
+    "recall_ci95": [
+     0.009,
+     0.114
+    ],
+    "fpr_ci95": [
+     0.026,
+     0.159
+    ]
+   },
+   "coverage": 0.9333,
+   "no_indication_npv": {
+    "k": 50,
+    "n": 106,
+    "value": 0.4717,
+    "ci95": [
+     0.379,
+     0.566
+    ]
+   },
+   "seconds": 85.3,
+   "rows": [
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0404
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.019
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0279
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0181
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.4999
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0004
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0362
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0004
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9855
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0008
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.2986
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0032
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0006
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.028
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.1441
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0268
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.2785
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9783
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0005
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0389
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.4613
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0534
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9039
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0081
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0956
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0003
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0003
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.4627
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.6621
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0003
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.036
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0452
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.3114
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.6402
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.9992
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0037
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0205
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0158
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "real",
+     "score": 0.0028
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0084
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.2411
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0016
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.1081
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0003
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0167
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.4096
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0169
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0059
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.7307
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0109
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0311
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0042
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0011
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0012
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0042
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.1225
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0597
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0019
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0073
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.5219
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0005
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0013
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0003
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0044
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0043
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0221
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.001
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0005
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0158
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0051
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0003
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0004
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0013
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0004
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.9749
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0018
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0002
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.118
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.0012
+    },
+    {
+     "id": "ateeqq_abstracts",
+     "label": "fake",
+     "score": 0.1231
+    }
+   ]
+  }
+ }
+}

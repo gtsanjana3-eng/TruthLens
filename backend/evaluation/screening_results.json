@@ -1,0 +1,1511 @@
+{
+ "split_seed": 7,
+ "results": {
+  "prithivMLmods/Deep-Fake-Detector-v2-Model": {
+   "revision": "3a99ae26f52c7ac7c3a53103b6cf3a8b617f7093",
+   "input": "face",
+   "videos": 40,
+   "roc_auc": 0.655,
+   "mean_fake": 0.6954,
+   "mean_real": 0.6315,
+   "seconds": 252.9,
+   "rows": [
+    {
+     "file": "dataset/real/01__outside_talking_still_laughing.mp4",
+     "label": "real",
+     "mean": 0.6821679001053175,
+     "frac_ge_0_5": 0.9166666666666666
+    },
+    {
+     "file": "dataset/real/02__kitchen_still.mp4",
+     "label": "real",
+     "mean": 0.6375042237341404,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/real/02__meeting_serious.mp4",
+     "label": "real",
+     "mean": 0.7835919186472893,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/real/02__outside_talking_still_laughing.mp4",
+     "label": "real",
+     "mean": 0.5846989173442125,
+     "frac_ge_0_5": 0.875
+    },
+    {
+     "file": "dataset/real/02__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.540360176935792,
+     "frac_ge_0_5": 0.7083333333333334
+    },
+    {
+     "file": "dataset/real/02__walking_and_outside_surprised.mp4",
+     "label": "real",
+     "mean": 0.6733546368777752,
+     "frac_ge_0_5": 0.8333333333333334
+    },
+    {
+     "file": "dataset/real/04__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.45325573968390626,
+     "frac_ge_0_5": 0.4583333333333333
+    },
+    {
+     "file": "dataset/real/05__hugging_happy.mp4",
+     "label": "real",
+     "mean": 0.8219379559159279,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/real/06__walk_down_hall_angry.mp4",
+     "label": "real",
+     "mean": 0.6207537466571444,
+     "frac_ge_0_5": 0.7619047619047619
+    },
+    {
+     "file": "dataset/real/07__outside_talking_pan_laughing.mp4",
+     "label": "real",
+     "mean": 0.5752787359736182,
+     "frac_ge_0_5": 0.7727272727272727
+    },
+    {
+     "file": "dataset/real/07__talking_against_wall.mp4",
+     "label": "real",
+     "mean": 0.17822164793809256,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/07__talking_angry_couch.mp4",
+     "label": "real",
+     "mean": 0.6928922993441423,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/real/07__walking_down_street_outside_angry.mp4",
+     "label": "real",
+     "mean": 0.4498947242444212,
+     "frac_ge_0_5": 0.36363636363636365
+    },
+    {
+     "file": "dataset/real/09__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.827975869178772,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/real/10__exit_phone_room.mp4",
+     "label": "real",
+     "mean": 0.5805594945947329,
+     "frac_ge_0_5": 0.8333333333333334
+    },
+    {
+     "file": "dataset/real/10__walking_outside_cafe_disgusted.mp4",
+     "label": "real",
+     "mean": 0.6324224825948477,
+     "frac_ge_0_5": 0.7916666666666666
+    },
+    {
+     "file": "dataset/real/11__walk_down_hall_angry.mp4",
+     "label": "real",
+     "mean": 0.8016914969140833,
+     "frac_ge_0_5": 0.9090909090909091
+    },
+    {
+     "file": "dataset/real/13__talking_against_wall.mp4",
+     "label": "real",
+     "mean": 0.5921896528452635,
+     "frac_ge_0_5": 0.6666666666666666
+    },
+    {
+     "file": "dataset/real/14__kitchen_still.mp4",
+     "label": "real",
+     "mean": 0.7432015327115854,
+     "frac_ge_0_5": 0.9166666666666666
+    },
+    {
+     "file": "dataset/real/14__outside_talking_pan_laughing.mp4",
+     "label": "real",
+     "mean": 0.7590086947787892,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/01_11__walking_outside_cafe_disgusted__FAFWDR4W.mp4",
+     "label": "fake",
+     "mean": 0.6992853302508593,
+     "frac_ge_0_5": 0.8333333333333334
+    },
+    {
+     "file": "dataset/fake/01_21__walk_down_hall_angry__03X7CELV.mp4",
+     "label": "fake",
+     "mean": 0.8289245218038559,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/fake/02_13__exit_phone_room__CP5HFV3K.mp4",
+     "label": "fake",
+     "mean": 0.7871552286669612,
+     "frac_ge_0_5": 0.9166666666666666
+    },
+    {
+     "file": "dataset/fake/02_15__exit_phone_room__I8G2LWD1.mp4",
+     "label": "fake",
+     "mean": 0.5445194728672504,
+     "frac_ge_0_5": 0.75
+    },
+    {
+     "file": "dataset/fake/02_15__outside_talking_pan_laughing__I8G2LWD1.mp4",
+     "label": "fake",
+     "mean": 0.6369743247826894,
+     "frac_ge_0_5": 0.875
+    },
+    {
+     "file": "dataset/fake/03_09__outside_talking_still_laughing__RCETIXYL.mp4",
+     "label": "fake",
+     "mean": 0.829631524781386,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/05_17__hugging_happy__YTJYYDO9.mp4",
+     "label": "fake",
+     "mean": 0.8741506164272627,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/05_28__kitchen_still__W3J028UG.mp4",
+     "label": "fake",
+     "mean": 0.6813864186406136,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/fake/06_12__podium_speech_happy__0VR4Y891.mp4",
+     "label": "fake",
+     "mean": 0.7996641049782435,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/06_12__podium_speech_happy__3K21NFNM.mp4",
+     "label": "fake",
+     "mean": 0.791989323993524,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/fake/06_14__outside_talking_pan_laughing__8U9ULZDT.mp4",
+     "label": "fake",
+     "mean": 0.7211350922783216,
+     "frac_ge_0_5": 0.875
+    },
+    {
+     "file": "dataset/fake/06_18__outside_talking_still_laughing__M36D0OJT.mp4",
+     "label": "fake",
+     "mean": 0.6928706479569277,
+     "frac_ge_0_5": 0.875
+    },
+    {
+     "file": "dataset/fake/07_06__outside_talking_still_laughing__NMGYPBXE.mp4",
+     "label": "fake",
+     "mean": 0.59180145089825,
+     "frac_ge_0_5": 0.7916666666666666
+    },
+    {
+     "file": "dataset/fake/07_06__walking_down_street_outside_angry__NMGYPBXE.mp4",
+     "label": "fake",
+     "mean": 0.5916000368694464,
+     "frac_ge_0_5": 0.7916666666666666
+    },
+    {
+     "file": "dataset/fake/07_20__outside_talking_pan_laughing__KV6Q7D6C.mp4",
+     "label": "fake",
+     "mean": 0.5968056917190552,
+     "frac_ge_0_5": 0.8333333333333334
+    },
+    {
+     "file": "dataset/fake/07_21__outside_talking_still_laughing__K7KXUHMU.mp4",
+     "label": "fake",
+     "mean": 0.7230178366104761,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/07_26__walking_down_street_outside_angry__FGNGC2GT.mp4",
+     "label": "fake",
+     "mean": 0.22254992369562387,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/fake/09_01__talking_against_wall__O8HNNX43.mp4",
+     "label": "fake",
+     "mean": 0.7656287855158249,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/fake/09_03__kitchen_pan__8DTEGQ54.mp4",
+     "label": "fake",
+     "mean": 0.6601601193348566,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/09_25__walking_down_street_outside_angry__5041ODBN.mp4",
+     "label": "fake",
+     "mean": 0.8691695109009743,
+     "frac_ge_0_5": 1.0
+    }
+   ]
+  },
+  "dima806/deepfake_vs_real_image_detection": {
+   "revision": "29e4cf9efc543845610045f6ba7e88e5cf9d9301",
+   "input": "face",
+   "videos": 40,
+   "roc_auc": 0.4325,
+   "mean_fake": 0.3583,
+   "mean_real": 0.3934,
+   "seconds": 242.7,
+   "rows": [
+    {
+     "file": "dataset/real/01__outside_talking_still_laughing.mp4",
+     "label": "real",
+     "mean": 0.9444182040169835,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/real/02__kitchen_still.mp4",
+     "label": "real",
+     "mean": 0.3036462916837384,
+     "frac_ge_0_5": 0.25
+    },
+    {
+     "file": "dataset/real/02__meeting_serious.mp4",
+     "label": "real",
+     "mean": 0.53529094477805,
+     "frac_ge_0_5": 0.5416666666666666
+    },
+    {
+     "file": "dataset/real/02__outside_talking_still_laughing.mp4",
+     "label": "real",
+     "mean": 0.3897969553945586,
+     "frac_ge_0_5": 0.375
+    },
+    {
+     "file": "dataset/real/02__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.5202878107423506,
+     "frac_ge_0_5": 0.5416666666666666
+    },
+    {
+     "file": "dataset/real/02__walking_and_outside_surprised.mp4",
+     "label": "real",
+     "mean": 0.5118274651322281,
+     "frac_ge_0_5": 0.5
+    },
+    {
+     "file": "dataset/real/04__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.48454384510114323,
+     "frac_ge_0_5": 0.4583333333333333
+    },
+    {
+     "file": "dataset/real/05__hugging_happy.mp4",
+     "label": "real",
+     "mean": 0.5340380400884897,
+     "frac_ge_0_5": 0.5
+    },
+    {
+     "file": "dataset/real/06__walk_down_hall_angry.mp4",
+     "label": "real",
+     "mean": 0.41375524718092666,
+     "frac_ge_0_5": 0.42857142857142855
+    },
+    {
+     "file": "dataset/real/07__outside_talking_pan_laughing.mp4",
+     "label": "real",
+     "mean": 0.697702697139572,
+     "frac_ge_0_5": 0.7272727272727273
+    },
+    {
+     "file": "dataset/real/07__talking_against_wall.mp4",
+     "label": "real",
+     "mean": 0.6308538921390815,
+     "frac_ge_0_5": 0.625
+    },
+    {
+     "file": "dataset/real/07__talking_angry_couch.mp4",
+     "label": "real",
+     "mean": 0.3620594581589103,
+     "frac_ge_0_5": 0.2916666666666667
+    },
+    {
+     "file": "dataset/real/07__walking_down_street_outside_angry.mp4",
+     "label": "real",
+     "mean": 0.1868623283120211,
+     "frac_ge_0_5": 0.18181818181818182
+    },
+    {
+     "file": "dataset/real/09__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.01077280251774937,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/10__exit_phone_room.mp4",
+     "label": "real",
+     "mean": 0.05721693241988154,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/real/10__walking_outside_cafe_disgusted.mp4",
+     "label": "real",
+     "mean": 0.07028425976992973,
+     "frac_ge_0_5": 0.08333333333333333
+    },
+    {
+     "file": "dataset/real/11__walk_down_hall_angry.mp4",
+     "label": "real",
+     "mean": 0.20771601173857396,
+     "frac_ge_0_5": 0.22727272727272727
+    },
+    {
+     "file": "dataset/real/13__talking_against_wall.mp4",
+     "label": "real",
+     "mean": 0.30641769253998064,
+     "frac_ge_0_5": 0.2916666666666667
+    },
+    {
+     "file": "dataset/real/14__kitchen_still.mp4",
+     "label": "real",
+     "mean": 0.2477860397969683,
+     "frac_ge_0_5": 0.25
+    },
+    {
+     "file": "dataset/real/14__outside_talking_pan_laughing.mp4",
+     "label": "real",
+     "mean": 0.45357453006065707,
+     "frac_ge_0_5": 0.45454545454545453
+    },
+    {
+     "file": "dataset/fake/01_11__walking_outside_cafe_disgusted__FAFWDR4W.mp4",
+     "label": "fake",
+     "mean": 0.21758688982420912,
+     "frac_ge_0_5": 0.20833333333333334
+    },
+    {
+     "file": "dataset/fake/01_21__walk_down_hall_angry__03X7CELV.mp4",
+     "label": "fake",
+     "mean": 0.17301369278478282,
+     "frac_ge_0_5": 0.16666666666666666
+    },
+    {
+     "file": "dataset/fake/02_13__exit_phone_room__CP5HFV3K.mp4",
+     "label": "fake",
+     "mean": 0.12911184153684493,
+     "frac_ge_0_5": 0.125
+    },
+    {
+     "file": "dataset/fake/02_15__exit_phone_room__I8G2LWD1.mp4",
+     "label": "fake",
+     "mean": 0.21699166015605442,
+     "frac_ge_0_5": 0.20833333333333334
+    },
+    {
+     "file": "dataset/fake/02_15__outside_talking_pan_laughing__I8G2LWD1.mp4",
+     "label": "fake",
+     "mean": 0.5449782320453475,
+     "frac_ge_0_5": 0.5833333333333334
+    },
+    {
+     "file": "dataset/fake/03_09__outside_talking_still_laughing__RCETIXYL.mp4",
+     "label": "fake",
+     "mean": 0.29872423616082716,
+     "frac_ge_0_5": 0.25
+    },
+    {
+     "file": "dataset/fake/05_17__hugging_happy__YTJYYDO9.mp4",
+     "label": "fake",
+     "mean": 0.14802627111203037,
+     "frac_ge_0_5": 0.16666666666666666
+    },
+    {
+     "file": "dataset/fake/05_28__kitchen_still__W3J028UG.mp4",
+     "label": "fake",
+     "mean": 0.07612734615880375,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/fake/06_12__podium_speech_happy__0VR4Y891.mp4",
+     "label": "fake",
+     "mean": 0.04010721305530751,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/fake/06_12__podium_speech_happy__3K21NFNM.mp4",
+     "label": "fake",
+     "mean": 0.07872697102235786,
+     "frac_ge_0_5": 0.08333333333333333
+    },
+    {
+     "file": "dataset/fake/06_14__outside_talking_pan_laughing__8U9ULZDT.mp4",
+     "label": "fake",
+     "mean": 0.6266161458916031,
+     "frac_ge_0_5": 0.625
+    },
+    {
+     "file": "dataset/fake/06_18__outside_talking_still_laughing__M36D0OJT.mp4",
+     "label": "fake",
+     "mean": 0.8046815320849419,
+     "frac_ge_0_5": 0.7916666666666666
+    },
+    {
+     "file": "dataset/fake/07_06__outside_talking_still_laughing__NMGYPBXE.mp4",
+     "label": "fake",
+     "mean": 0.708087460991616,
+     "frac_ge_0_5": 0.6666666666666666
+    },
+    {
+     "file": "dataset/fake/07_06__walking_down_street_outside_angry__NMGYPBXE.mp4",
+     "label": "fake",
+     "mean": 0.18195920614622688,
+     "frac_ge_0_5": 0.16666666666666666
+    },
+    {
+     "file": "dataset/fake/07_20__outside_talking_pan_laughing__KV6Q7D6C.mp4",
+     "label": "fake",
+     "mean": 0.7359466111908356,
+     "frac_ge_0_5": 0.75
+    },
+    {
+     "file": "dataset/fake/07_21__outside_talking_still_laughing__K7KXUHMU.mp4",
+     "label": "fake",
+     "mean": 0.20330869464669377,
+     "frac_ge_0_5": 0.125
+    },
+    {
+     "file": "dataset/fake/07_26__walking_down_street_outside_angry__FGNGC2GT.mp4",
+     "label": "fake",
+     "mean": 0.9870783810814222,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/09_01__talking_against_wall__O8HNNX43.mp4",
+     "label": "fake",
+     "mean": 0.05600865434583587,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/fake/09_03__kitchen_pan__8DTEGQ54.mp4",
+     "label": "fake",
+     "mean": 0.8452700848380724,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/fake/09_25__walking_down_street_outside_angry__5041ODBN.mp4",
+     "label": "fake",
+     "mean": 0.09346554318714577,
+     "frac_ge_0_5": 0.125
+    }
+   ]
+  },
+  "Organika/sdxl-detector": {
+   "revision": "b37fede8562cb72b89ec201c0987f96ba21b518a",
+   "input": "frame",
+   "videos": 40,
+   "roc_auc": 0.5675,
+   "mean_fake": 0.7415,
+   "mean_real": 0.6977,
+   "seconds": 269.3,
+   "rows": [
+    {
+     "file": "dataset/real/01__outside_talking_still_laughing.mp4",
+     "label": "real",
+     "mean": 0.9983689486980438,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/real/02__kitchen_still.mp4",
+     "label": "real",
+     "mean": 0.6136768062909445,
+     "frac_ge_0_5": 0.75
+    },
+    {
+     "file": "dataset/real/02__meeting_serious.mp4",
+     "label": "real",
+     "mean": 0.4609038295845191,
+     "frac_ge_0_5": 0.375
+    },
+    {
+     "file": "dataset/real/02__outside_talking_still_laughing.mp4",
+     "label": "real",
+     "mean": 0.9983493288358053,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/real/02__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.897243912021319,
+     "frac_ge_0_5": 0.9166666666666666
+    },
+    {
+     "file": "dataset/real/02__walking_and_outside_surprised.mp4",
+     "label": "real",
+     "mean": 0.9768467595179876,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/real/04__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.7788939960300922,
+     "frac_ge_0_5": 0.9166666666666666
+    },
+    {
+     "file": "dataset/real/05__hugging_happy.mp4",
+     "label": "real",
+     "mean": 0.38177645097797114,
+     "frac_ge_0_5": 0.3333333333333333
+    },
+    {
+     "file": "dataset/real/06__walk_down_hall_angry.mp4",
+     "label": "real",
+     "mean": 0.6707649996836457,
+     "frac_ge_0_5": 0.875
+    },
+    {
+     "file": "dataset/real/07__outside_talking_pan_laughing.mp4",
+     "label": "real",
+     "mean": 0.9981022601326307,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/real/07__talking_against_wall.mp4",
+     "label": "real",
+     "mean": 0.9955865864952406,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/real/07__talking_angry_couch.mp4",
+     "label": "real",
+     "mean": 0.06303458175777148,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/07__walking_down_street_outside_angry.mp4",
+     "label": "real",
+     "mean": 0.8257741847385963,
+     "frac_ge_0_5": 0.9166666666666666
+    },
+    {
+     "file": "dataset/real/09__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.8570847486456236,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/real/10__exit_phone_room.mp4",
+     "label": "real",
+     "mean": 0.43876755039552034,
+     "frac_ge_0_5": 0.375
+    },
+    {
+     "file": "dataset/real/10__walking_outside_cafe_disgusted.mp4",
+     "label": "real",
+     "mean": 0.06779063559952192,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/11__walk_down_hall_angry.mp4",
+     "label": "real",
+     "mean": 0.17066750231242622,
+     "frac_ge_0_5": 0.16666666666666666
+    },
+    {
+     "file": "dataset/real/13__talking_against_wall.mp4",
+     "label": "real",
+     "mean": 0.9998936603466669,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/real/14__kitchen_still.mp4",
+     "label": "real",
+     "mean": 0.7599237837518255,
+     "frac_ge_0_5": 0.875
+    },
+    {
+     "file": "dataset/real/14__outside_talking_pan_laughing.mp4",
+     "label": "real",
+     "mean": 0.9997175633907318,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/01_11__walking_outside_cafe_disgusted__FAFWDR4W.mp4",
+     "label": "fake",
+     "mean": 0.0012139225612675848,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/01_21__walk_down_hall_angry__03X7CELV.mp4",
+     "label": "fake",
+     "mean": 0.08682118685101159,
+     "frac_ge_0_5": 0.08333333333333333
+    },
+    {
+     "file": "dataset/fake/02_13__exit_phone_room__CP5HFV3K.mp4",
+     "label": "fake",
+     "mean": 0.9489640047152837,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/02_15__exit_phone_room__I8G2LWD1.mp4",
+     "label": "fake",
+     "mean": 0.9013868818680445,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/fake/02_15__outside_talking_pan_laughing__I8G2LWD1.mp4",
+     "label": "fake",
+     "mean": 0.9262143963327011,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/fake/03_09__outside_talking_still_laughing__RCETIXYL.mp4",
+     "label": "fake",
+     "mean": 0.998427078127861,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/05_17__hugging_happy__YTJYYDO9.mp4",
+     "label": "fake",
+     "mean": 0.3303812995242576,
+     "frac_ge_0_5": 0.25
+    },
+    {
+     "file": "dataset/fake/05_28__kitchen_still__W3J028UG.mp4",
+     "label": "fake",
+     "mean": 0.04988968687636467,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/06_12__podium_speech_happy__0VR4Y891.mp4",
+     "label": "fake",
+     "mean": 0.892660842393525,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/fake/06_12__podium_speech_happy__3K21NFNM.mp4",
+     "label": "fake",
+     "mean": 0.9094947914321286,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/fake/06_14__outside_talking_pan_laughing__8U9ULZDT.mp4",
+     "label": "fake",
+     "mean": 0.9890727748473486,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/06_18__outside_talking_still_laughing__M36D0OJT.mp4",
+     "label": "fake",
+     "mean": 0.9983112315336863,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/07_06__outside_talking_still_laughing__NMGYPBXE.mp4",
+     "label": "fake",
+     "mean": 0.9992374355594317,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/07_06__walking_down_street_outside_angry__NMGYPBXE.mp4",
+     "label": "fake",
+     "mean": 0.9039025902748108,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/fake/07_20__outside_talking_pan_laughing__KV6Q7D6C.mp4",
+     "label": "fake",
+     "mean": 0.9977227076888084,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/07_21__outside_talking_still_laughing__K7KXUHMU.mp4",
+     "label": "fake",
+     "mean": 0.9994157726565996,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/07_26__walking_down_street_outside_angry__FGNGC2GT.mp4",
+     "label": "fake",
+     "mean": 0.8945383280515671,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/09_01__talking_against_wall__O8HNNX43.mp4",
+     "label": "fake",
+     "mean": 0.9997680683930715,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/09_03__kitchen_pan__8DTEGQ54.mp4",
+     "label": "fake",
+     "mean": 0.006116368297758375,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/09_25__walking_down_street_outside_angry__5041ODBN.mp4",
+     "label": "fake",
+     "mean": 0.9965462709466616,
+     "frac_ge_0_5": 1.0
+    }
+   ]
+  },
+  "hchcsuim/batch-size16_DFDC_opencv-1FPS_faces-expand30-aligned_unaugmentation": {
+   "revision": "03870974c7ddca0f6508c7ae68b87772e6b8e09c",
+   "input": "face",
+   "videos": 40,
+   "roc_auc": 0.7175,
+   "mean_fake": 0.4645,
+   "mean_real": 0.2319,
+   "seconds": 96.6,
+   "rows": [
+    {
+     "file": "dataset/real/01__outside_talking_still_laughing.mp4",
+     "label": "real",
+     "mean": 0.04375044287492832,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/real/02__kitchen_still.mp4",
+     "label": "real",
+     "mean": 0.5662922379948819,
+     "frac_ge_0_5": 0.875
+    },
+    {
+     "file": "dataset/real/02__meeting_serious.mp4",
+     "label": "real",
+     "mean": 0.7177778544525305,
+     "frac_ge_0_5": 0.9166666666666666
+    },
+    {
+     "file": "dataset/real/02__outside_talking_still_laughing.mp4",
+     "label": "real",
+     "mean": 0.07742419360632387,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/02__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.08185172112522802,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/real/02__walking_and_outside_surprised.mp4",
+     "label": "real",
+     "mean": 0.20227928425204786,
+     "frac_ge_0_5": 0.20833333333333334
+    },
+    {
+     "file": "dataset/real/04__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.1369690969295334,
+     "frac_ge_0_5": 0.125
+    },
+    {
+     "file": "dataset/real/05__hugging_happy.mp4",
+     "label": "real",
+     "mean": 0.10041508063053091,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/06__walk_down_hall_angry.mp4",
+     "label": "real",
+     "mean": 0.2770448611339643,
+     "frac_ge_0_5": 0.2857142857142857
+    },
+    {
+     "file": "dataset/real/07__outside_talking_pan_laughing.mp4",
+     "label": "real",
+     "mean": 0.005255302199988033,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/07__talking_against_wall.mp4",
+     "label": "real",
+     "mean": 0.05399421891585613,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/real/07__talking_angry_couch.mp4",
+     "label": "real",
+     "mean": 0.7969306115701329,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/real/07__walking_down_street_outside_angry.mp4",
+     "label": "real",
+     "mean": 0.3154238504145972,
+     "frac_ge_0_5": 0.3181818181818182
+    },
+    {
+     "file": "dataset/real/09__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.5512714323995169,
+     "frac_ge_0_5": 0.5833333333333334
+    },
+    {
+     "file": "dataset/real/10__exit_phone_room.mp4",
+     "label": "real",
+     "mean": 0.06995002137652288,
+     "frac_ge_0_5": 0.08333333333333333
+    },
+    {
+     "file": "dataset/real/10__walking_outside_cafe_disgusted.mp4",
+     "label": "real",
+     "mean": 0.26585291562757146,
+     "frac_ge_0_5": 0.20833333333333334
+    },
+    {
+     "file": "dataset/real/11__walk_down_hall_angry.mp4",
+     "label": "real",
+     "mean": 0.340632671860724,
+     "frac_ge_0_5": 0.3181818181818182
+    },
+    {
+     "file": "dataset/real/13__talking_against_wall.mp4",
+     "label": "real",
+     "mean": 0.0008222444933683922,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/14__kitchen_still.mp4",
+     "label": "real",
+     "mean": 0.024499953569223482,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/14__outside_talking_pan_laughing.mp4",
+     "label": "real",
+     "mean": 0.008909995717906648,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/01_11__walking_outside_cafe_disgusted__FAFWDR4W.mp4",
+     "label": "fake",
+     "mean": 0.7248243327873448,
+     "frac_ge_0_5": 0.75
+    },
+    {
+     "file": "dataset/fake/01_21__walk_down_hall_angry__03X7CELV.mp4",
+     "label": "fake",
+     "mean": 0.9647750246028105,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/fake/02_13__exit_phone_room__CP5HFV3K.mp4",
+     "label": "fake",
+     "mean": 0.20132309165395176,
+     "frac_ge_0_5": 0.16666666666666666
+    },
+    {
+     "file": "dataset/fake/02_15__exit_phone_room__I8G2LWD1.mp4",
+     "label": "fake",
+     "mean": 0.3100374513839294,
+     "frac_ge_0_5": 0.3333333333333333
+    },
+    {
+     "file": "dataset/fake/02_15__outside_talking_pan_laughing__I8G2LWD1.mp4",
+     "label": "fake",
+     "mean": 0.23506310035008937,
+     "frac_ge_0_5": 0.25
+    },
+    {
+     "file": "dataset/fake/03_09__outside_talking_still_laughing__RCETIXYL.mp4",
+     "label": "fake",
+     "mean": 0.2453518189722672,
+     "frac_ge_0_5": 0.16666666666666666
+    },
+    {
+     "file": "dataset/fake/05_17__hugging_happy__YTJYYDO9.mp4",
+     "label": "fake",
+     "mean": 0.019419151513526838,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/05_28__kitchen_still__W3J028UG.mp4",
+     "label": "fake",
+     "mean": 0.7154055914531151,
+     "frac_ge_0_5": 0.9166666666666666
+    },
+    {
+     "file": "dataset/fake/06_12__podium_speech_happy__0VR4Y891.mp4",
+     "label": "fake",
+     "mean": 0.7677739482217779,
+     "frac_ge_0_5": 0.7916666666666666
+    },
+    {
+     "file": "dataset/fake/06_12__podium_speech_happy__3K21NFNM.mp4",
+     "label": "fake",
+     "mean": 0.9936106155316035,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/06_14__outside_talking_pan_laughing__8U9ULZDT.mp4",
+     "label": "fake",
+     "mean": 0.38004459739507485,
+     "frac_ge_0_5": 0.2916666666666667
+    },
+    {
+     "file": "dataset/fake/06_18__outside_talking_still_laughing__M36D0OJT.mp4",
+     "label": "fake",
+     "mean": 0.3987235051269333,
+     "frac_ge_0_5": 0.375
+    },
+    {
+     "file": "dataset/fake/07_06__outside_talking_still_laughing__NMGYPBXE.mp4",
+     "label": "fake",
+     "mean": 0.184881771216169,
+     "frac_ge_0_5": 0.08333333333333333
+    },
+    {
+     "file": "dataset/fake/07_06__walking_down_street_outside_angry__NMGYPBXE.mp4",
+     "label": "fake",
+     "mean": 0.5524434318067506,
+     "frac_ge_0_5": 0.5416666666666666
+    },
+    {
+     "file": "dataset/fake/07_20__outside_talking_pan_laughing__KV6Q7D6C.mp4",
+     "label": "fake",
+     "mean": 0.08001106290127306,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/fake/07_21__outside_talking_still_laughing__K7KXUHMU.mp4",
+     "label": "fake",
+     "mean": 0.8986337793370088,
+     "frac_ge_0_5": 0.875
+    },
+    {
+     "file": "dataset/fake/07_26__walking_down_street_outside_angry__FGNGC2GT.mp4",
+     "label": "fake",
+     "mean": 0.18333975769686126,
+     "frac_ge_0_5": 0.16666666666666666
+    },
+    {
+     "file": "dataset/fake/09_01__talking_against_wall__O8HNNX43.mp4",
+     "label": "fake",
+     "mean": 0.009497195997634359,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/09_03__kitchen_pan__8DTEGQ54.mp4",
+     "label": "fake",
+     "mean": 0.7865792301793894,
+     "frac_ge_0_5": 0.9166666666666666
+    },
+    {
+     "file": "dataset/fake/09_25__walking_down_street_outside_angry__5041ODBN.mp4",
+     "label": "fake",
+     "mean": 0.6376969040332673,
+     "frac_ge_0_5": 0.6666666666666666
+    }
+   ]
+  },
+  "hchcsuim/batch-size16_DFDC_opencv-1FPS_faces-expand50-aligned_unaugmentation": {
+   "revision": "5c9aa417b1e9118441877de06536b37b25019889",
+   "input": "face",
+   "videos": 40,
+   "roc_auc": 0.75,
+   "mean_fake": 0.434,
+   "mean_real": 0.1932,
+   "seconds": 97.6,
+   "rows": [
+    {
+     "file": "dataset/real/01__outside_talking_still_laughing.mp4",
+     "label": "real",
+     "mean": 0.04194935638952302,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/real/02__kitchen_still.mp4",
+     "label": "real",
+     "mean": 0.652666041511111,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/real/02__meeting_serious.mp4",
+     "label": "real",
+     "mean": 0.6531299203634262,
+     "frac_ge_0_5": 0.8333333333333334
+    },
+    {
+     "file": "dataset/real/02__outside_talking_still_laughing.mp4",
+     "label": "real",
+     "mean": 0.010451665235450491,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/02__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.07776604441460222,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/real/02__walking_and_outside_surprised.mp4",
+     "label": "real",
+     "mean": 0.15903659215837251,
+     "frac_ge_0_5": 0.20833333333333334
+    },
+    {
+     "file": "dataset/real/04__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.07748503757466096,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/real/05__hugging_happy.mp4",
+     "label": "real",
+     "mean": 0.06816170236561447,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/06__walk_down_hall_angry.mp4",
+     "label": "real",
+     "mean": 0.25649111346519066,
+     "frac_ge_0_5": 0.23809523809523808
+    },
+    {
+     "file": "dataset/real/07__outside_talking_pan_laughing.mp4",
+     "label": "real",
+     "mean": 0.0005585024704156571,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/07__talking_against_wall.mp4",
+     "label": "real",
+     "mean": 0.04190608667947041,
+     "frac_ge_0_5": 0.041666666666666664
+    },
+    {
+     "file": "dataset/real/07__talking_angry_couch.mp4",
+     "label": "real",
+     "mean": 0.6369239060829083,
+     "frac_ge_0_5": 0.9583333333333334
+    },
+    {
+     "file": "dataset/real/07__walking_down_street_outside_angry.mp4",
+     "label": "real",
+     "mean": 0.2627082795185164,
+     "frac_ge_0_5": 0.2727272727272727
+    },
+    {
+     "file": "dataset/real/09__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.21427280240459368,
+     "frac_ge_0_5": 0.16666666666666666
+    },
+    {
+     "file": "dataset/real/10__exit_phone_room.mp4",
+     "label": "real",
+     "mean": 0.0675438658023874,
+     "frac_ge_0_5": 0.08333333333333333
+    },
+    {
+     "file": "dataset/real/10__walking_outside_cafe_disgusted.mp4",
+     "label": "real",
+     "mean": 0.22324916966802752,
+     "frac_ge_0_5": 0.16666666666666666
+    },
+    {
+     "file": "dataset/real/11__walk_down_hall_angry.mp4",
+     "label": "real",
+     "mean": 0.3874791386452588,
+     "frac_ge_0_5": 0.36363636363636365
+    },
+    {
+     "file": "dataset/real/13__talking_against_wall.mp4",
+     "label": "real",
+     "mean": 0.00046150040240415063,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/14__kitchen_still.mp4",
+     "label": "real",
+     "mean": 0.03007645288016647,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/14__outside_talking_pan_laughing.mp4",
+     "label": "real",
+     "mean": 0.0012011782938233491,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/01_11__walking_outside_cafe_disgusted__FAFWDR4W.mp4",
+     "label": "fake",
+     "mean": 0.32801092534403625,
+     "frac_ge_0_5": 0.20833333333333334
+    },
+    {
+     "file": "dataset/fake/01_21__walk_down_hall_angry__03X7CELV.mp4",
+     "label": "fake",
+     "mean": 0.6340548048610799,
+     "frac_ge_0_5": 0.625
+    },
+    {
+     "file": "dataset/fake/02_13__exit_phone_room__CP5HFV3K.mp4",
+     "label": "fake",
+     "mean": 0.3515216911231012,
+     "frac_ge_0_5": 0.3333333333333333
+    },
+    {
+     "file": "dataset/fake/02_15__exit_phone_room__I8G2LWD1.mp4",
+     "label": "fake",
+     "mean": 0.6605891151508937,
+     "frac_ge_0_5": 0.625
+    },
+    {
+     "file": "dataset/fake/02_15__outside_talking_pan_laughing__I8G2LWD1.mp4",
+     "label": "fake",
+     "mean": 0.10903453953991023,
+     "frac_ge_0_5": 0.08333333333333333
+    },
+    {
+     "file": "dataset/fake/03_09__outside_talking_still_laughing__RCETIXYL.mp4",
+     "label": "fake",
+     "mean": 0.26104030950712814,
+     "frac_ge_0_5": 0.20833333333333334
+    },
+    {
+     "file": "dataset/fake/05_17__hugging_happy__YTJYYDO9.mp4",
+     "label": "fake",
+     "mean": 0.018144776879732188,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/05_28__kitchen_still__W3J028UG.mp4",
+     "label": "fake",
+     "mean": 0.40158975376592326,
+     "frac_ge_0_5": 0.20833333333333334
+    },
+    {
+     "file": "dataset/fake/06_12__podium_speech_happy__0VR4Y891.mp4",
+     "label": "fake",
+     "mean": 0.9999057004849116,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/06_12__podium_speech_happy__3K21NFNM.mp4",
+     "label": "fake",
+     "mean": 0.9943332994977633,
+     "frac_ge_0_5": 1.0
+    },
+    {
+     "file": "dataset/fake/06_14__outside_talking_pan_laughing__8U9ULZDT.mp4",
+     "label": "fake",
+     "mean": 0.35952831272637314,
+     "frac_ge_0_5": 0.3333333333333333
+    },
+    {
+     "file": "dataset/fake/06_18__outside_talking_still_laughing__M36D0OJT.mp4",
+     "label": "fake",
+     "mean": 0.19009542982773078,
+     "frac_ge_0_5": 0.125
+    },
+    {
+     "file": "dataset/fake/07_06__outside_talking_still_laughing__NMGYPBXE.mp4",
+     "label": "fake",
+     "mean": 0.08223124692206814,
+     "frac_ge_0_5": 0.08333333333333333
+    },
+    {
+     "file": "dataset/fake/07_06__walking_down_street_outside_angry__NMGYPBXE.mp4",
+     "label": "fake",
+     "mean": 0.3225842967100713,
+     "frac_ge_0_5": 0.2916666666666667
+    },
+    {
+     "file": "dataset/fake/07_20__outside_talking_pan_laughing__KV6Q7D6C.mp4",
+     "label": "fake",
+     "mean": 0.13639092267446054,
+     "frac_ge_0_5": 0.125
+    },
+    {
+     "file": "dataset/fake/07_21__outside_talking_still_laughing__K7KXUHMU.mp4",
+     "label": "fake",
+     "mean": 0.9326994270086288,
+     "frac_ge_0_5": 0.9166666666666666
+    },
+    {
+     "file": "dataset/fake/07_26__walking_down_street_outside_angry__FGNGC2GT.mp4",
+     "label": "fake",
+     "mean": 0.2545865836327721,
+     "frac_ge_0_5": 0.25
+    },
+    {
+     "file": "dataset/fake/09_01__talking_against_wall__O8HNNX43.mp4",
+     "label": "fake",
+     "mean": 0.010744288915399617,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/09_03__kitchen_pan__8DTEGQ54.mp4",
+     "label": "fake",
+     "mean": 0.7694425175432116,
+     "frac_ge_0_5": 0.875
+    },
+    {
+     "file": "dataset/fake/09_25__walking_down_street_outside_angry__5041ODBN.mp4",
+     "label": "fake",
+     "mean": 0.8633003813447431,
+     "frac_ge_0_5": 0.9166666666666666
+    }
+   ]
+  },
+  "buildborderless/CommunityForensics-DeepfakeDet-ViT": {
+   "revision": "ac6ee457bea904a373065754107451793b56db00",
+   "input": "frame",
+   "videos": 40,
+   "roc_auc": 0.46,
+   "mean_fake": 0.0263,
+   "mean_real": 0.0523,
+   "seconds": 240.5,
+   "rows": [
+    {
+     "file": "dataset/real/01__outside_talking_still_laughing.mp4",
+     "label": "real",
+     "mean": 0.0005042928997909257,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/02__kitchen_still.mp4",
+     "label": "real",
+     "mean": 0.15673440374545558,
+     "frac_ge_0_5": 0.08333333333333333
+    },
+    {
+     "file": "dataset/real/02__meeting_serious.mp4",
+     "label": "real",
+     "mean": 0.02394322972880521,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/02__outside_talking_still_laughing.mp4",
+     "label": "real",
+     "mean": 0.0038191603216546355,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/02__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.009659882251677724,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/02__walking_and_outside_surprised.mp4",
+     "label": "real",
+     "mean": 0.025279199609940406,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/04__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.003077603542503008,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/05__hugging_happy.mp4",
+     "label": "real",
+     "mean": 0.004060715600038141,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/06__walk_down_hall_angry.mp4",
+     "label": "real",
+     "mean": 2.3059620048115903e-05,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/07__outside_talking_pan_laughing.mp4",
+     "label": "real",
+     "mean": 0.018014605460318005,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/07__talking_against_wall.mp4",
+     "label": "real",
+     "mean": 0.011136120803712402,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/07__talking_angry_couch.mp4",
+     "label": "real",
+     "mean": 0.23542714518650124,
+     "frac_ge_0_5": 0.16666666666666666
+    },
+    {
+     "file": "dataset/real/07__walking_down_street_outside_angry.mp4",
+     "label": "real",
+     "mean": 0.0016994292642872704,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/09__podium_speech_happy.mp4",
+     "label": "real",
+     "mean": 0.016873395959313104,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/10__exit_phone_room.mp4",
+     "label": "real",
+     "mean": 0.0031382893403133494,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/10__walking_outside_cafe_disgusted.mp4",
+     "label": "real",
+     "mean": 0.07161631874138645,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/11__walk_down_hall_angry.mp4",
+     "label": "real",
+     "mean": 8.890367049237587e-05,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/13__talking_against_wall.mp4",
+     "label": "real",
+     "mean": 0.00028698946486353333,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/14__kitchen_still.mp4",
+     "label": "real",
+     "mean": 0.132878846838139,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/real/14__outside_talking_pan_laughing.mp4",
+     "label": "real",
+     "mean": 0.3286621852263731,
+     "frac_ge_0_5": 0.25
+    },
+    {
+     "file": "dataset/fake/01_11__walking_outside_cafe_disgusted__FAFWDR4W.mp4",
+     "label": "fake",
+     "mean": 0.000961274486826369,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/01_21__walk_down_hall_angry__03X7CELV.mp4",
+     "label": "fake",
+     "mean": 2.2632732698942466e-05,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/02_13__exit_phone_room__CP5HFV3K.mp4",
+     "label": "fake",
+     "mean": 0.0010055106170815027,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/02_15__exit_phone_room__I8G2LWD1.mp4",
+     "label": "fake",
+     "mean": 0.0031024965761995795,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/02_15__outside_talking_pan_laughing__I8G2LWD1.mp4",
+     "label": "fake",
+     "mean": 0.0016281495424361008,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/03_09__outside_talking_still_laughing__RCETIXYL.mp4",
+     "label": "fake",
+     "mean": 0.009140734540778794,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/05_17__hugging_happy__YTJYYDO9.mp4",
+     "label": "fake",
+     "mean": 0.018074485662509687,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/05_28__kitchen_still__W3J028UG.mp4",
+     "label": "fake",
+     "mean": 0.007837844954337925,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/06_12__podium_speech_happy__0VR4Y891.mp4",
+     "label": "fake",
+     "mean": 0.010097975387035754,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/06_12__podium_speech_happy__3K21NFNM.mp4",
+     "label": "fake",
+     "mean": 0.015846860343685876,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/06_14__outside_talking_pan_laughing__8U9ULZDT.mp4",
+     "label": "fake",
+     "mean": 0.019647346398111647,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/06_18__outside_talking_still_laughing__M36D0OJT.mp4",
+     "label": "fake",
+     "mean": 0.024143909467966296,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/07_06__outside_talking_still_laughing__NMGYPBXE.mp4",
+     "label": "fake",
+     "mean": 0.010817570440243193,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/07_06__walking_down_street_outside_angry__NMGYPBXE.mp4",
+     "label": "fake",
+     "mean": 0.0012501619842926932,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/07_20__outside_talking_pan_laughing__KV6Q7D6C.mp4",
+     "label": "fake",
+     "mean": 0.006021186196600563,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/07_21__outside_talking_still_laughing__K7KXUHMU.mp4",
+     "label": "fake",
+     "mean": 0.0361364116937087,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/07_26__walking_down_street_outside_angry__FGNGC2GT.mp4",
+     "label": "fake",
+     "mean": 0.0010469838525750674,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/09_01__talking_against_wall__O8HNNX43.mp4",
+     "label": "fake",
+     "mean": 0.012395172875888724,
+     "frac_ge_0_5": 0.0
+    },
+    {
+     "file": "dataset/fake/09_03__kitchen_pan__8DTEGQ54.mp4",
+     "label": "fake",
+     "mean": 0.2913108853002389,
+     "frac_ge_0_5": 0.25
+    },
+    {
+     "file": "dataset/fake/09_25__walking_down_street_outside_angry__5041ODBN.mp4",
+     "label": "fake",
+     "mean": 0.05479900891562769,
+     "frac_ge_0_5": 0.041666666666666664
+    }
+   ]
+  }
+ }
+}

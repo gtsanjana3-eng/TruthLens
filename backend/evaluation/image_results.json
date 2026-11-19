@@ -1,0 +1,1054 @@
+{
+ "generated_at": "2026-11-19T12:19:31.716512+00:00",
+ "modality": "image",
+ "stage": "heldout",
+ "dataset": "Parveshiiii/AI-vs-Real",
+ "rule": {
+  "likely_ai": 0.7,
+  "no_indication": 0.3
+ },
+ "results": {
+  "haywoodsloan/ai-image-detector-deploy": {
+   "revision": "4ae1822603cb1ec980c217cfde1ef1b8e0477a16",
+   "n": 200,
+   "errors": 0,
+   "roc_auc": 0.9529,
+   "mean_fake": 0.9299,
+   "mean_real": 0.1909,
+   "rule_likely_ai": {
+    "n": 200,
+    "tp": 93,
+    "tn": 83,
+    "fp": 17,
+    "fn": 7,
+    "accuracy": 0.88,
+    "precision": 0.8455,
+    "recall": 0.93,
+    "f1": 0.8857,
+    "fpr": 0.17,
+    "fnr": 0.07,
+    "recall_ci95": [
+     0.863,
+     0.966
+    ],
+    "fpr_ci95": [
+     0.109,
+     0.255
+    ]
+   },
+   "coverage": 1.0,
+   "no_indication_npv": {
+    "k": 83,
+    "n": 90,
+    "value": 0.9222,
+    "ci95": [
+     0.848,
+     0.962
+    ]
+   },
+   "seconds": 272.9,
+   "rows": [
+    {
+     "id": "real_000.jpg",
+     "label": "real",
+     "score": 0.9883
+    },
+    {
+     "id": "real_001.jpg",
+     "label": "real",
+     "score": 0.0084
+    },
+    {
+     "id": "real_002.jpg",
+     "label": "real",
+     "score": 0.0113
+    },
+    {
+     "id": "real_003.jpg",
+     "label": "real",
+     "score": 0.9988
+    },
+    {
+     "id": "real_007.jpg",
+     "label": "real",
+     "score": 0.9939
+    },
+    {
+     "id": "real_008.jpg",
+     "label": "real",
+     "score": 0.9994
+    },
+    {
+     "id": "real_009.jpg",
+     "label": "real",
+     "score": 0.9532
+    },
+    {
+     "id": "real_010.jpg",
+     "label": "real",
+     "score": 0.0007
+    },
+    {
+     "id": "real_011.jpg",
+     "label": "real",
+     "score": 0.0153
+    },
+    {
+     "id": "real_013.jpg",
+     "label": "real",
+     "score": 0.0037
+    },
+    {
+     "id": "real_014.jpg",
+     "label": "real",
+     "score": 0.0008
+    },
+    {
+     "id": "real_016.jpg",
+     "label": "real",
+     "score": 0.0034
+    },
+    {
+     "id": "real_017.jpg",
+     "label": "real",
+     "score": 0.0158
+    },
+    {
+     "id": "real_019.jpg",
+     "label": "real",
+     "score": 0.0037
+    },
+    {
+     "id": "real_021.jpg",
+     "label": "real",
+     "score": 0.0105
+    },
+    {
+     "id": "real_022.jpg",
+     "label": "real",
+     "score": 0.0017
+    },
+    {
+     "id": "real_024.jpg",
+     "label": "real",
+     "score": 0.0448
+    },
+    {
+     "id": "real_025.jpg",
+     "label": "real",
+     "score": 0.0799
+    },
+    {
+     "id": "real_026.jpg",
+     "label": "real",
+     "score": 0.01
+    },
+    {
+     "id": "real_027.jpg",
+     "label": "real",
+     "score": 0.0005
+    },
+    {
+     "id": "real_029.jpg",
+     "label": "real",
+     "score": 0.0012
+    },
+    {
+     "id": "real_031.jpg",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "real_036.jpg",
+     "label": "real",
+     "score": 0.2654
+    },
+    {
+     "id": "real_037.jpg",
+     "label": "real",
+     "score": 0.0138
+    },
+    {
+     "id": "real_038.jpg",
+     "label": "real",
+     "score": 0.0015
+    },
+    {
+     "id": "real_040.jpg",
+     "label": "real",
+     "score": 0.0082
+    },
+    {
+     "id": "real_044.jpg",
+     "label": "real",
+     "score": 0.0003
+    },
+    {
+     "id": "real_049.jpg",
+     "label": "real",
+     "score": 0.0078
+    },
+    {
+     "id": "real_051.jpg",
+     "label": "real",
+     "score": 0.14
+    },
+    {
+     "id": "real_052.jpg",
+     "label": "real",
+     "score": 0.914
+    },
+    {
+     "id": "real_054.jpg",
+     "label": "real",
+     "score": 0.0418
+    },
+    {
+     "id": "real_056.jpg",
+     "label": "real",
+     "score": 0.0272
+    },
+    {
+     "id": "real_057.jpg",
+     "label": "real",
+     "score": 0.9975
+    },
+    {
+     "id": "real_058.jpg",
+     "label": "real",
+     "score": 0.0023
+    },
+    {
+     "id": "real_060.jpg",
+     "label": "real",
+     "score": 0.0097
+    },
+    {
+     "id": "real_061.jpg",
+     "label": "real",
+     "score": 0.0262
+    },
+    {
+     "id": "real_063.jpg",
+     "label": "real",
+     "score": 0.0051
+    },
+    {
+     "id": "real_064.jpg",
+     "label": "real",
+     "score": 0.0031
+    },
+    {
+     "id": "real_066.jpg",
+     "label": "real",
+     "score": 0.0097
+    },
+    {
+     "id": "real_069.jpg",
+     "label": "real",
+     "score": 0.0216
+    },
+    {
+     "id": "real_070.jpg",
+     "label": "real",
+     "score": 0.9747
+    },
+    {
+     "id": "real_071.jpg",
+     "label": "real",
+     "score": 0.2929
+    },
+    {
+     "id": "real_072.jpg",
+     "label": "real",
+     "score": 0.0042
+    },
+    {
+     "id": "real_073.jpg",
+     "label": "real",
+     "score": 0.0164
+    },
+    {
+     "id": "real_074.jpg",
+     "label": "real",
+     "score": 0.0007
+    },
+    {
+     "id": "real_075.jpg",
+     "label": "real",
+     "score": 0.0095
+    },
+    {
+     "id": "real_076.jpg",
+     "label": "real",
+     "score": 0.0592
+    },
+    {
+     "id": "real_077.jpg",
+     "label": "real",
+     "score": 0.008
+    },
+    {
+     "id": "real_080.jpg",
+     "label": "real",
+     "score": 0.0045
+    },
+    {
+     "id": "real_082.jpg",
+     "label": "real",
+     "score": 0.0266
+    },
+    {
+     "id": "real_084.jpg",
+     "label": "real",
+     "score": 0.9491
+    },
+    {
+     "id": "real_086.jpg",
+     "label": "real",
+     "score": 0.0309
+    },
+    {
+     "id": "real_087.jpg",
+     "label": "real",
+     "score": 0.0092
+    },
+    {
+     "id": "real_090.jpg",
+     "label": "real",
+     "score": 0.0018
+    },
+    {
+     "id": "real_091.jpg",
+     "label": "real",
+     "score": 0.002
+    },
+    {
+     "id": "real_092.jpg",
+     "label": "real",
+     "score": 0.0499
+    },
+    {
+     "id": "real_093.jpg",
+     "label": "real",
+     "score": 0.0011
+    },
+    {
+     "id": "real_094.jpg",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "real_095.jpg",
+     "label": "real",
+     "score": 0.0378
+    },
+    {
+     "id": "real_096.jpg",
+     "label": "real",
+     "score": 0.1412
+    },
+    {
+     "id": "real_097.jpg",
+     "label": "real",
+     "score": 0.0456
+    },
+    {
+     "id": "real_098.jpg",
+     "label": "real",
+     "score": 0.9771
+    },
+    {
+     "id": "real_100.jpg",
+     "label": "real",
+     "score": 0.0039
+    },
+    {
+     "id": "real_101.jpg",
+     "label": "real",
+     "score": 0.0006
+    },
+    {
+     "id": "real_102.jpg",
+     "label": "real",
+     "score": 0.941
+    },
+    {
+     "id": "real_103.jpg",
+     "label": "real",
+     "score": 0.1202
+    },
+    {
+     "id": "real_104.jpg",
+     "label": "real",
+     "score": 0.066
+    },
+    {
+     "id": "real_106.jpg",
+     "label": "real",
+     "score": 0.0847
+    },
+    {
+     "id": "real_108.jpg",
+     "label": "real",
+     "score": 0.1487
+    },
+    {
+     "id": "real_109.jpg",
+     "label": "real",
+     "score": 0.0033
+    },
+    {
+     "id": "real_112.jpg",
+     "label": "real",
+     "score": 0.0917
+    },
+    {
+     "id": "real_113.jpg",
+     "label": "real",
+     "score": 0.001
+    },
+    {
+     "id": "real_116.jpg",
+     "label": "real",
+     "score": 0.1411
+    },
+    {
+     "id": "real_117.jpg",
+     "label": "real",
+     "score": 0.0012
+    },
+    {
+     "id": "real_118.jpg",
+     "label": "real",
+     "score": 0.0002
+    },
+    {
+     "id": "real_119.jpg",
+     "label": "real",
+     "score": 0.0053
+    },
+    {
+     "id": "real_120.jpg",
+     "label": "real",
+     "score": 0.0053
+    },
+    {
+     "id": "real_122.jpg",
+     "label": "real",
+     "score": 0.0127
+    },
+    {
+     "id": "real_123.jpg",
+     "label": "real",
+     "score": 0.0133
+    },
+    {
+     "id": "real_124.jpg",
+     "label": "real",
+     "score": 0.0269
+    },
+    {
+     "id": "real_125.jpg",
+     "label": "real",
+     "score": 0.0117
+    },
+    {
+     "id": "real_126.jpg",
+     "label": "real",
+     "score": 0.0515
+    },
+    {
+     "id": "real_127.jpg",
+     "label": "real",
+     "score": 0.0449
+    },
+    {
+     "id": "real_128.jpg",
+     "label": "real",
+     "score": 0.9348
+    },
+    {
+     "id": "real_129.jpg",
+     "label": "real",
+     "score": 0.9304
+    },
+    {
+     "id": "real_130.jpg",
+     "label": "real",
+     "score": 0.0005
+    },
+    {
+     "id": "real_131.jpg",
+     "label": "real",
+     "score": 0.9387
+    },
+    {
+     "id": "real_132.jpg",
+     "label": "real",
+     "score": 0.004
+    },
+    {
+     "id": "real_133.jpg",
+     "label": "real",
+     "score": 0.8312
+    },
+    {
+     "id": "real_134.jpg",
+     "label": "real",
+     "score": 0.0535
+    },
+    {
+     "id": "real_135.jpg",
+     "label": "real",
+     "score": 0.007
+    },
+    {
+     "id": "real_136.jpg",
+     "label": "real",
+     "score": 0.1337
+    },
+    {
+     "id": "real_137.jpg",
+     "label": "real",
+     "score": 0.0134
+    },
+    {
+     "id": "real_138.jpg",
+     "label": "real",
+     "score": 0.9378
+    },
+    {
+     "id": "real_141.jpg",
+     "label": "real",
+     "score": 0.0578
+    },
+    {
+     "id": "real_142.jpg",
+     "label": "real",
+     "score": 0.9704
+    },
+    {
+     "id": "real_144.jpg",
+     "label": "real",
+     "score": 0.0766
+    },
+    {
+     "id": "real_145.jpg",
+     "label": "real",
+     "score": 0.0075
+    },
+    {
+     "id": "real_146.jpg",
+     "label": "real",
+     "score": 0.02
+    },
+    {
+     "id": "real_148.jpg",
+     "label": "real",
+     "score": 0.1112
+    },
+    {
+     "id": "fake_001.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_002.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_005.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_007.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_009.jpg",
+     "label": "fake",
+     "score": 0.9947
+    },
+    {
+     "id": "fake_010.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_011.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_013.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_015.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_016.jpg",
+     "label": "fake",
+     "score": 0.9851
+    },
+    {
+     "id": "fake_018.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_019.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_020.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_026.jpg",
+     "label": "fake",
+     "score": 0.0054
+    },
+    {
+     "id": "fake_027.jpg",
+     "label": "fake",
+     "score": 0.0007
+    },
+    {
+     "id": "fake_028.jpg",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "fake_029.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_031.jpg",
+     "label": "fake",
+     "score": 0.9969
+    },
+    {
+     "id": "fake_032.jpg",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "fake_033.jpg",
+     "label": "fake",
+     "score": 0.9973
+    },
+    {
+     "id": "fake_034.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_035.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_036.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_037.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_038.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_039.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_040.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_041.jpg",
+     "label": "fake",
+     "score": 0.9716
+    },
+    {
+     "id": "fake_043.jpg",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "fake_046.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_049.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_050.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_052.jpg",
+     "label": "fake",
+     "score": 0.9996
+    },
+    {
+     "id": "fake_053.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_054.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_055.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_057.jpg",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "fake_059.jpg",
+     "label": "fake",
+     "score": 1.0
+    },
+    {
+     "id": "fake_060.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_061.jpg",
+     "label": "fake",
+     "score": 1.0
+    },
+    {
+     "id": "fake_062.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_063.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_064.jpg",
+     "label": "fake",
+     "score": 0.9991
+    },
+    {
+     "id": "fake_066.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_067.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_070.jpg",
+     "label": "fake",
+     "score": 0.9048
+    },
+    {
+     "id": "fake_071.jpg",
+     "label": "fake",
+     "score": 0.9997
+    },
+    {
+     "id": "fake_073.jpg",
+     "label": "fake",
+     "score": 0.9997
+    },
+    {
+     "id": "fake_074.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_075.jpg",
+     "label": "fake",
+     "score": 0.9996
+    },
+    {
+     "id": "fake_077.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_079.jpg",
+     "label": "fake",
+     "score": 0.1551
+    },
+    {
+     "id": "fake_081.jpg",
+     "label": "fake",
+     "score": 0.9432
+    },
+    {
+     "id": "fake_082.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_083.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_084.jpg",
+     "label": "fake",
+     "score": 1.0
+    },
+    {
+     "id": "fake_085.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_086.jpg",
+     "label": "fake",
+     "score": 1.0
+    },
+    {
+     "id": "fake_087.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_088.jpg",
+     "label": "fake",
+     "score": 0.9937
+    },
+    {
+     "id": "fake_089.jpg",
+     "label": "fake",
+     "score": 0.0315
+    },
+    {
+     "id": "fake_090.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_092.jpg",
+     "label": "fake",
+     "score": 1.0
+    },
+    {
+     "id": "fake_093.jpg",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "fake_094.jpg",
+     "label": "fake",
+     "score": 1.0
+    },
+    {
+     "id": "fake_096.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_097.jpg",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "fake_098.jpg",
+     "label": "fake",
+     "score": 0.9991
+    },
+    {
+     "id": "fake_099.jpg",
+     "label": "fake",
+     "score": 1.0
+    },
+    {
+     "id": "fake_100.jpg",
+     "label": "fake",
+     "score": 1.0
+    },
+    {
+     "id": "fake_102.jpg",
+     "label": "fake",
+     "score": 0.0149
+    },
+    {
+     "id": "fake_105.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_106.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_108.jpg",
+     "label": "fake",
+     "score": 0.9997
+    },
+    {
+     "id": "fake_111.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_112.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_116.jpg",
+     "label": "fake",
+     "score": 0.9929
+    },
+    {
+     "id": "fake_117.jpg",
+     "label": "fake",
+     "score": 0.9993
+    },
+    {
+     "id": "fake_119.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_120.jpg",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "fake_122.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_123.jpg",
+     "label": "fake",
+     "score": 0.9996
+    },
+    {
+     "id": "fake_124.jpg",
+     "label": "fake",
+     "score": 0.9998
+    },
+    {
+     "id": "fake_125.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_126.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_127.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_128.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_131.jpg",
+     "label": "fake",
+     "score": 0.0159
+    },
+    {
+     "id": "fake_133.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_136.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_139.jpg",
+     "label": "fake",
+     "score": 0.9989
+    },
+    {
+     "id": "fake_140.jpg",
+     "label": "fake",
+     "score": 0.9991
+    },
+    {
+     "id": "fake_141.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_142.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_143.jpg",
+     "label": "fake",
+     "score": 0.9971
+    },
+    {
+     "id": "fake_144.jpg",
+     "label": "fake",
+     "score": 0.9999
+    },
+    {
+     "id": "fake_146.jpg",
+     "label": "fake",
+     "score": 0.0012
+    },
+    {
+     "id": "fake_147.jpg",
+     "label": "fake",
+     "score": 1.0
+    },
+    {
+     "id": "fake_148.jpg",
+     "label": "fake",
+     "score": 0.9997
+    },
+    {
+     "id": "fake_149.jpg",
+     "label": "fake",
+     "score": 0.9999
+    }
+   ]
+  }
+ }
+}

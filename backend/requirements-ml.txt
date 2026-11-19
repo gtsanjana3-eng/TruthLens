@@ -1,0 +1,8 @@
+# Optional: learned AI/deepfake classifiers from Hugging Face (CPU build of PyTorch).
+# Install in two steps (installing torch first avoids slow dependency backtracking):
+#   pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements-ml.txt
+torch==2.5.1
+transformers==4.46.3
+safetensors>=0.4.5
+huggingface_hub>=0.26,<1.0
