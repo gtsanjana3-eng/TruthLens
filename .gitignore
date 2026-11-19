@@ -21,3 +21,7 @@ Thumbs.db
 *.db
 *.sqlite
 .claude/
+
+# Local helper programs (e.g. cloudflared for the public tunnel)
+tools/
+frontend/.vercel/

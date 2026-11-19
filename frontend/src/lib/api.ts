@@ -62,7 +62,7 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
     res = await fetch(API_BASE + path, { ...init, headers });
   } catch {
     throw new ApiError(0, API_BASE
-      ? "Cannot reach the TruthLens server. If it was asleep it is waking up – please try again in about a minute."
+      ? "The TruthLens analysis server is offline right now. Please try again later."
       : "Cannot reach the TruthLens server. Check that the backend is running.");
   }
   if (res.status === 401 && token) onUnauthorized?.();
