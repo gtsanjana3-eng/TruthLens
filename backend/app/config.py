@@ -28,6 +28,10 @@ class Settings(BaseSettings):
     preview_dir: Path = BACKEND_DIR / "data" / "previews"
     report_dir: Path = BACKEND_DIR / "data" / "reports"
     cors_origins: str = "http://localhost:5180,http://127.0.0.1:5180"
+    # Optional durable file storage (Supabase Storage). Needed on hosts with a temporary disk, e.g. Hugging Face Spaces.
+    supabase_url: str = ""            # https://<project-ref>.supabase.co
+    supabase_service_key: str = ""    # server-side secret (service_role / secret key) – never sent to browsers
+    supabase_bucket: str = "truthlens-files"
 
     # Upload limits
     max_image_mb: int = 25

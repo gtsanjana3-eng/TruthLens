@@ -290,7 +290,13 @@ def safe_join(root: Path, relative: str) -> Path:
 
 
 def evidence_path(relative: str) -> Path:
-    return safe_join(Path(get_settings().storage_dir), relative)
+    p = safe_join(Path(get_settings().storage_dir), relative)
+    if not p.exists():
+        from . import remote_storage  # restore the original after a host restart (temporary disks)
+
+        if remote_storage.pull(f"evidence/{relative}", p):
+            os.chmod(p, stat.S_IREAD | stat.S_IRGRP)
+    return p
 
 
 def sha256_file(path: Path) -> str:

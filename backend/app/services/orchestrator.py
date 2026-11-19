@@ -18,7 +18,7 @@ import numpy as np
 from sqlalchemy import delete, select
 from sqlalchemy.orm import Session
 
-from .. import audit
+from .. import audit, remote_storage
 from ..agents import audio_agent, image_agent, metadata_agent, ml_agent, sync_analyzer, text_agent, video_agent
 from ..agents.base import AgentOutput
 from ..agents.mediainfo import decode_to_wav, soundfile_can_read
@@ -293,6 +293,7 @@ class Orchestrator:
             bundle.indicator_types = [i["indicator_type"] for o in outputs for i in o.get("indicators", [])]
             any_failed |= any(o["status"] == "failed" for o in outputs)
             per_evidence[ev.id] = {"label": ev.label, "outputs": outputs}
+            remote_storage.push_dir_async(f"artifacts/{adir.name}", adir)  # heatmaps, frames, spectrograms
             bundles.append(bundle)
             db.commit()
 

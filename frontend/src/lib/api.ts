@@ -49,6 +49,9 @@ export class ApiError extends Error {
 let onUnauthorized: (() => void) | null = null;
 export const setUnauthorizedHandler = (fn: () => void) => { onUnauthorized = fn; };
 
+/** Backend origin. Empty locally (Vite proxies /api); set VITE_API_BASE when the API is hosted elsewhere. */
+export const API_BASE = (import.meta.env.VITE_API_BASE ?? "").replace(/\/+$/, "");
+
 async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
   const headers = new Headers(init.headers);
   const token = tokenStore.get();
@@ -56,9 +59,11 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
   if (init.body && !(init.body instanceof FormData)) headers.set("Content-Type", "application/json");
   let res: Response;
   try {
-    res = await fetch(path, { ...init, headers });
+    res = await fetch(API_BASE + path, { ...init, headers });
   } catch {
-    throw new ApiError(0, "Cannot reach the TruthLens server. Check that the backend is running.");
+    throw new ApiError(0, API_BASE
+      ? "Cannot reach the TruthLens server. If it was asleep it is waking up – please try again in about a minute."
+      : "Cannot reach the TruthLens server. Check that the backend is running.");
   }
   if (res.status === 401 && token) onUnauthorized?.();
   if (!res.ok) {

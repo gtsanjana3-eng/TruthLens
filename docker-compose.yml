@@ -16,10 +16,8 @@ services:
       DATABASE_URL: postgresql+psycopg://truthlens:${POSTGRES_PASSWORD}@db:5432/truthlens
       JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET}
       CORS_ORIGINS: http://localhost:8080
-      STORAGE_DIR: /data/evidence
-      PREVIEW_DIR: /data/previews
-      REPORT_DIR: /data/reports
-    volumes: [evidence:/data]
+      PORT: "8000"
+    volumes: [evidence:/home/user/data]
     depends_on: { db: { condition: service_healthy } }
   frontend:
     build: ./frontend

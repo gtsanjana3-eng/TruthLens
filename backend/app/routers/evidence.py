@@ -9,7 +9,7 @@ from fastapi.responses import FileResponse
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
-from .. import audit
+from .. import audit, remote_storage
 from ..config import get_settings
 from ..database import get_db
 from ..models import EvidenceFile, FileHash, MediaType, Role, User, utcnow
@@ -73,6 +73,7 @@ def upload(case_id: str, request: Request, file: UploadFile = File(...), descrip
         audit.record(db, "evidence.rejected", user_id=user.id, case_id=case.id, detail={"reason": str(e), "filename": safe_display_name(file.filename or "")}, ip=client_ip(request))
         raise HTTPException(status.HTTP_422_UNPROCESSABLE_ENTITY, str(e))
     path = evidence_path(stored.relative_path)
+    remote_storage.push(f"evidence/{stored.relative_path}", path)  # durable copy before the upload is confirmed
     meta: dict = {"detected_content": stored.detected}
     if stored.notes:
         meta["content_notes"] = stored.notes
@@ -121,6 +122,7 @@ def upload(case_id: str, request: Request, file: UploadFile = File(...), descrip
         try:
             if prev.exists() or run_isolated(make_image_preview, str(path), str(prev), timeout=60):
                 ev.preview_path = prev.name
+                remote_storage.push_async(f"previews/thumbs/{prev.name}", prev)
         except Exception:  # noqa: BLE001
             ev.preview_path = None
     case.updated_at = utcnow()
@@ -164,7 +166,9 @@ def preview(evidence_id: str, user: User = Depends(get_current_user), db: Sessio
     e = _evidence_for_user(db, evidence_id, user)
     if not e.preview_path:
         raise HTTPException(404, "No preview available")
-    return FileResponse(safe_join(Path(get_settings().preview_dir) / "thumbs", e.preview_path), media_type="image/jpeg")
+    p = safe_join(Path(get_settings().preview_dir) / "thumbs", e.preview_path)
+    remote_storage.pull(f"previews/thumbs/{e.preview_path}", p)
+    return FileResponse(p, media_type="image/jpeg")
 
 
 @router.get("/evidence/{evidence_id}/artifacts/{name:path}")
@@ -178,7 +182,7 @@ def artifact(evidence_id: str, name: str, user: User = Depends(get_current_user)
         p = safe_join(base, name)
     except ValidationError:
         raise HTTPException(400, "Invalid artifact name")
-    if not p.is_file():
+    if not p.is_file() and not remote_storage.pull(f"artifacts/{Path(e.stored_path).stem}/{name}", p):
         raise HTTPException(404, "Artifact not found")
     mt = {"jpg": "image/jpeg", "png": "image/png", "wav": "audio/wav"}[p.suffix[1:]]
     return FileResponse(p, media_type=mt, headers={"Cache-Control": "private, max-age=3600"})

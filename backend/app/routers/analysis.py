@@ -8,7 +8,7 @@ from fastapi.responses import FileResponse
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session, selectinload
 
-from .. import audit
+from .. import audit, remote_storage
 from ..config import get_settings
 from ..database import get_db
 from ..models import (AgentResult, AnalysisJob, AuditLog, CrossModalFinding, EvidenceFile, ForensicReport, JobStatus,
@@ -135,6 +135,7 @@ def generate_report(case_id: str, request: Request, user: User = Depends(get_cur
     dest = safe_join(Path(s.report_dir), name)
     build_pdf(dest, ctx)
     rep.file_path, rep.sha256 = name, sha256_file(dest)
+    remote_storage.push(f"reports/{name}", dest)
     rep.content = {k: v for k, v in ctx.items() if k not in ("images", "audit")} | {"audit_entries": len(ctx["audit"])}
     audit.record(db, "report.generated", user_id=user.id, case_id=c.id, detail={"report_id": rep.id, "sha256": rep.sha256}, ip=client_ip(request))
     return rep
@@ -153,7 +154,7 @@ def download_report(report_id: str, request: Request, user: User = Depends(get_c
         raise HTTPException(404, "Report not found")
     get_case_for_user(db, rep.case_id, user)
     path = safe_join(Path(get_settings().report_dir), rep.file_path)
-    if not path.exists():
+    if not path.exists() and not remote_storage.pull(f"reports/{rep.file_path}", path):
         raise HTTPException(410, "Report file no longer available")
     audit.record(db, "report.downloaded", user_id=user.id, case_id=rep.case_id, detail={"report_id": rep.id}, ip=client_ip(request))
     return FileResponse(path, media_type="application/pdf", filename=rep.file_path, headers={"X-Report-SHA256": rep.sha256})
